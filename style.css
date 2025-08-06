@@ -1,0 +1,26 @@
+.recipe-card:hover {
+      transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .active-category {
+          background-color: #f59e0b;
+            color: white;
+            }
+
+            .modal {
+              transition: opacity 0.3s ease, visibility 0.3s ease;
+              }
+
+              .category-btn {
+                padding: 0.5rem 1rem;
+                  border-radius: 9999px;
+                    background-color: #e5e7eb; /* bg-gray-200 */
+                      transition: all 0.3s ease;
+                      }
+
+                      .category-btn:hover {
+                        background-color: #f59e0b; /* bg-amber-500 */
+                          color: white;
+                          }
+}
