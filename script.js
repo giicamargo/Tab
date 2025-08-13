@@ -1,6 +1,4 @@
-// =========================
-// Formulário de Feedback
-// =========================
+
 const form = document.getElementById('feedbackForm');
 const input = document.getElementById('feedbackInput');
 const message = document.getElementById('feedbackMsg');
@@ -13,9 +11,7 @@ form.addEventListener('submit', function (e) {
     }
 });
 
-// =========================
-// Lista de Receitas
-// =========================
+
 const recipes = [
     {
         id: 1,
@@ -138,17 +134,13 @@ const recipes = [
     }
 ];
 
-// =========================
-// Elementos DOM
-// =========================
+
 const recipesContainer = document.getElementById('recipes-container');
 const categoryButtons = document.querySelectorAll('.category-btn');
 const modal = document.getElementById('recipe-modal');
 const closeModal = document.getElementById('close-modal');
 
-// =========================
-// Funções
-// =========================
+
 function displayRecipes(recipesToDisplay) {
     recipesContainer.innerHTML = '';
     
@@ -228,9 +220,7 @@ function openRecipeModal(recipe) {
     document.body.style.overflow = 'hidden';
 }
 
-// =========================
-// Eventos
-// =========================
+
 categoryButtons.forEach(button => {
     button.addEventListener('click', () => {
         categoryButtons.forEach(btn => btn.classList.remove('active-category'));
@@ -260,7 +250,4 @@ modal.addEventListener('click', (e) => {
     }
 });
 
-// =========================
-// Inicialização
-// =========================
 displayRecipes(recipes);
